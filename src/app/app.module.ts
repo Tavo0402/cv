@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PreloaderComponent } from './components/preloader/preloader.component';
+import { InfoBarComponent } from './components/info-bar/info-bar.component';
+import { ContentComponent } from './components/content/content.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PreloaderComponent,
+    InfoBarComponent,
+    ContentComponent 
   ],
   imports: [
     BrowserModule,
