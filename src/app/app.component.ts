@@ -10,6 +10,7 @@ declare var jQuery:any;
 declare var $:any;
 //declare var Scrollbar:any;
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -37,6 +38,7 @@ export class AppComponent implements OnInit {
       renderByPixels: true,
       continuousScrolling: true,
     });
+    
     Scrollbar.init(document.querySelector('#scrollbar2'), {
       damping: 0.05,
       renderByPixels: true,
@@ -113,7 +115,7 @@ export class AppComponent implements OnInit {
     });
 
     // progressbars
-    var bar = new ProgressBar.Circle(circleprog1, {
+    var bar = new ProgressBar.Circle('#circleprog1', {
       strokeWidth: 7,
       easing: 'easeInOut',
       duration: 1400,
@@ -131,7 +133,7 @@ export class AppComponent implements OnInit {
 
     bar.animate(1);
 
-    var bar = new ProgressBar.Circle(circleprog2, {
+    var bar = new ProgressBar.Circle('#circleprog2', {
       strokeWidth: 7,
       easing: 'easeInOut',
       duration: 1400,
@@ -149,7 +151,7 @@ export class AppComponent implements OnInit {
 
     bar.animate(0.9);
 
-    var bar = new ProgressBar.Circle(circleprog3, {
+    var bar = new ProgressBar.Circle('#circleprog3', {
       strokeWidth: 7,
       easing: 'easeInOut',
       duration: 1400,
@@ -167,7 +169,7 @@ export class AppComponent implements OnInit {
 
     bar.animate(0.7);
 
-    var bar = new ProgressBar.Line(lineprog1, {
+    var bar = new ProgressBar.Line('#lineprog1', {
       strokeWidth: 1.72,
       easing: 'easeInOut',
       duration: 1400,
@@ -184,7 +186,7 @@ export class AppComponent implements OnInit {
 
     bar.animate(.9);
 
-    var bar = new ProgressBar.Line(lineprog2, {
+    var bar = new ProgressBar.Line('#lineprog2', {
       strokeWidth: 1.72,
       easing: 'easeInOut',
       duration: 1400,
@@ -201,7 +203,7 @@ export class AppComponent implements OnInit {
 
     bar.animate(.95);
 
-    var bar = new ProgressBar.Line(lineprog3, {
+    var bar = new ProgressBar.Line('#lineprog3', {
       strokeWidth: 1.72,
       easing: 'easeInOut',
       duration: 1400,
@@ -218,7 +220,7 @@ export class AppComponent implements OnInit {
 
     bar.animate(.75);
 
-    var bar = new ProgressBar.Line(lineprog4, {
+    var bar = new ProgressBar.Line('#lineprog4', {
       strokeWidth: 1.72,
       easing: 'easeInOut',
       duration: 1400,
@@ -235,7 +237,7 @@ export class AppComponent implements OnInit {
 
     bar.animate(.65);
 
-    var bar = new ProgressBar.Line(lineprog5, {
+    var bar = new ProgressBar.Line('#lineprog5', {
       strokeWidth: 1.72,
       easing: 'easeInOut',
       duration: 1400,
@@ -252,7 +254,7 @@ export class AppComponent implements OnInit {
 
     bar.animate(.85);
 
-    var bar = new ProgressBar.Line(lineprog6, {
+    var bar = new ProgressBar.Line('#lineprog6', {
       strokeWidth: 1.72,
       easing: 'easeInOut',
       duration: 1400,
@@ -268,6 +270,24 @@ export class AppComponent implements OnInit {
     });
 
     bar.animate(.85);
+
+    var bar = new ProgressBar.Line('#lineprog7', {
+      strokeWidth: 1.72,
+      easing: 'easeInOut',
+      duration: 1400,
+      delay: 3200,
+      trailWidth: 1.72,
+      svgStyle: {
+        width: '100%',
+        height: '100%'
+      },
+      step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+      }
+    });
+
+    bar.animate(.85);
+
     // Contact form
     $('.art-input').keyup(function() {
       if ($(this).val()) {
