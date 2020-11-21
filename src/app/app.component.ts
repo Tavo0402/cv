@@ -115,59 +115,23 @@ export class AppComponent implements OnInit {
       });
 
       // progressbars
-      var bar = new ProgressBar.Circle('#circleprog1', {
-        strokeWidth: 7,
-        easing: 'easeInOut',
-        duration: 1400,
-        delay: 2500,
-        trailWidth: 7,
-        step: function (state, circle) {
-          var value = Math.round(circle.value() * 100);
-          if (value === 0) {
-            circle.setText('');
-          } else {
-            circle.setText(value);
-          }
-        },
-      });
+      // var bar = new ProgressBar.Circle('#circleprog1', {
+      //   strokeWidth: 7,
+      //   easing: 'easeInOut',
+      //   duration: 1400,
+      //   delay: 2500,
+      //   trailWidth: 7,
+      //   step: function (state, circle) {
+      //     var value = Math.round(circle.value() * 100);
+      //     if (value === 0) {
+      //       circle.setText('');
+      //     } else {
+      //       circle.setText(value);
+      //     }
+      //   },
+      // });
 
-      bar.animate(1);
-
-      var bar = new ProgressBar.Circle('#circleprog2', {
-        strokeWidth: 7,
-        easing: 'easeInOut',
-        duration: 1400,
-        delay: 2600,
-        trailWidth: 7,
-        step: function (state, circle) {
-          var value = Math.round(circle.value() * 100);
-          if (value === 0) {
-            circle.setText('');
-          } else {
-            circle.setText(value);
-          }
-        },
-      });
-
-      bar.animate(0.9);
-
-      var bar = new ProgressBar.Circle('#circleprog3', {
-        strokeWidth: 7,
-        easing: 'easeInOut',
-        duration: 1400,
-        delay: 2700,
-        trailWidth: 7,
-        step: function (state, circle) {
-          var value = Math.round(circle.value() * 100);
-          if (value === 0) {
-            circle.setText('');
-          } else {
-            circle.setText(value);
-          }
-        },
-      });
-
-      bar.animate(0.7);
+      // bar.animate(1);
 
       var bar = new ProgressBar.Line('#lineprog1', {
         strokeWidth: 1.72,
@@ -287,6 +251,23 @@ export class AppComponent implements OnInit {
       });
 
       bar.animate(0.85);
+
+      var bar = new ProgressBar.Line('#lineprog8', {
+        strokeWidth: 1.72,
+        easing: 'easeInOut',
+        duration: 1400,
+        delay: 3200,
+        trailWidth: 1.72,
+        svgStyle: {
+          width: '100%',
+          height: '100%',
+        },
+        step: (state, bar) => {
+          bar.setText(Math.round(bar.value() * 100) + ' %');
+        },
+      });
+
+      bar.animate(0.7);
 
       // Contact form
       $('.art-input').keyup(function () {
@@ -705,10 +686,10 @@ export class AppComponent implements OnInit {
       $('body').prepend(demo);
 
       var sheets = {
-        orange: $('<link rel="stylesheet" href="css/color-1.css">'),
-        red: $('<link rel="stylesheet" href="css/color-2.css">'),
-        green: $('<link rel="stylesheet" href="css/color-3.css">'),
-        blue: $('<link rel="stylesheet" href="css/color-4.css">'),
+        orange: $('<link rel="stylesheet" href="assets/css/color-1.css">'),
+        red: $('<link rel="stylesheet" href="assets/css/color-2.css">'),
+        green: $('<link rel="stylesheet" href="assets/css/color-3.css">'),
+        blue: $('<link rel="stylesheet" href="assets/css/color-4.css">'),
       };
 
       var sheets2 = {
@@ -720,7 +701,7 @@ export class AppComponent implements OnInit {
         ),
       };
 
-      var currentSheet = sheets.orange.appendTo($('head'));
+      var currentSheet = sheets.green.appendTo($('head'));
 
       $('a.swapColor').click(function () {
         currentSheet.detach();

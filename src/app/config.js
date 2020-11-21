@@ -4,11 +4,19 @@ export let Path = {
 
 export let PersonalInfo = {
   name: "Octavio Ponce",
-  title: "Software Developer",
+  title: "Full Stack Developer",
   country: "Mexico",
   state: "Chihuahua",
   city: "Juarez",
   year: "1991",
+  linkedIn: "https://www.linkedin.com/in/octavio-ponce-980573165/",
+  github: "https://github.com/Tavo0402",
+  twitter: "https://twitter.com/OctavioPonce12",
+  email: "oponce2014@hotmail.com",
+  phone: "+52656-3-07-11-82",
+  firstWorkYear: "2015",
+  completedProjects: "15",
+  customers: "5",
   languages: [
     {
       id: "lineprog1",
@@ -55,6 +63,7 @@ export let PersonalInfo = {
     "Crystal Reports, Rotativa",
     "IIS, Apache, Nginx",
     "Jenkins",
+    "Docker",
     "GIT knowledge",
   ],
   services: [
@@ -67,11 +76,7 @@ export let PersonalInfo = {
       description: "",
     },
     {
-      name: "UI/UX Desing",
-      description: "",
-    },
-    {
-      name: "Database Desing",
+      name: "Desktop Development",
       description: "",
     },
   ],

@@ -10,12 +10,12 @@ export class InfoBarComponent implements OnInit {
   path: string = Path.url;
   name: string = PersonalInfo.name;
   title: string = PersonalInfo.title;
-  country: string = PersonalInfo.country;
-  state: string = PersonalInfo.state;
-  city: string = PersonalInfo.city;
   age: number = this.currentYear - PersonalInfo.year;
   languages: any[] = PersonalInfo.languages;
   others: any[] = PersonalInfo.others;
+  linkedId: string = PersonalInfo.linkedIn;
+  github: string = PersonalInfo.github;
+  twitter: string = PersonalInfo.twitter;
   constructor() {}
 
   ngOnInit(): void {}

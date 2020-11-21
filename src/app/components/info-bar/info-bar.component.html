@@ -5,7 +5,7 @@
     <!-- info bar header -->
     <div class="art-info-bar-header">
       <!-- info bar button -->
-      <a class="art-info-bar-btn" href="#.">
+      <a class="art-info-bar-btn" href="#">
         <!-- icon -->
         <i class="fas fa-ellipsis-v"></i>
       </a>
@@ -42,67 +42,22 @@
 
     <!-- scroll frame -->
     <div id="scrollbar2" class="art-scroll-frame">
-      <!-- info bar about -->
-      <div class="art-table p-15-15">
-        <!-- about text -->
-        <ul>
-          <!-- country -->
-          <li>
-            <h6>Residence:</h6>
-            <span>{{ country }}</span>
-          </li>
-          <!-- city -->
-          <li>
-            <h6>City:</h6>
-            <span>{{ city }}</span>
-          </li>
-          <!-- age -->
-          <li>
-            <h6>Age:</h6>
-            <span>{{ age }}</span>
-          </li>
-        </ul>
-      </div>
-      <!-- info bar about end -->
-
-      <!-- divider -->
-      <div class="art-ls-divider"></div>
-
-      <!-- language skills -->
-      <div class="art-lang-skills p-30-15">
+      <div class="art-hard-skills">
         <!-- skill -->
-        <div class="art-lang-skills-item">
-          <div id="circleprog1" class="art-cirkle-progress"></div>
-          <!-- title -->
-          <h6>French</h6>
-        </div>
-        <!-- skill end -->
-
-        <!-- skill -->
-        <div class="art-lang-skills-item">
-          <div id="circleprog2" class="art-cirkle-progress"></div>
-          <!-- title -->
-          <h6>English</h6>
-        </div>
-        <!-- skill end -->
-
-        <!-- skill -->
-        <div class="art-lang-skills-item">
-          <div id="circleprog3" class="art-cirkle-progress"></div>
-          <!-- title -->
-          <h6>Spanish</h6>
-        </div>
-        <!-- skill end -->
-
-        <!-- skill -->
-        <div class="art-lang-skills-item">
-          <div id="circleprog3" class="art-cirkle-progress"></div>
-          <!-- title -->
-          <h6>Spanish</h6>
+        <div class="art-hard-skills-item">
+          <div class="art-skill-heading">
+            <!-- title -->
+            <h6>English</h6>
+          </div>
+          <!-- progressbar frame -->
+          <div class="art-line-progress">
+            <!-- progressbar -->
+            <div id="lineprog8"></div>
+          </div>
+          <!-- progressbar frame end -->
         </div>
         <!-- skill end -->
       </div>
-      <!-- language skills end -->
 
       <!-- divider -->
       <div class="art-ls-divider"></div>
@@ -124,7 +79,6 @@
         </div>
         <!-- skill end -->
       </div>
-      <!-- language skills end -->
 
       <!-- divider -->
       <div class="art-ls-divider"></div>
@@ -153,15 +107,13 @@
     <!-- sidebar social -->
     <div class="art-ls-social">
       <!-- social link -->
-      <a href="#." target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="{{ linkedId }}" target="_blank"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
       <!-- social link -->
-      <a href="#." target="_blank"><i class="fab fa-dribbble"></i></a>
+      <a href="{{ github }}" target="_blank"><i class="fab fa-github"></i></a>
       <!-- social link -->
-      <a href="#." target="_blank"><i class="fab fa-behance"></i></a>
-      <!-- social link -->
-      <a href="#." target="_blank"><i class="fab fa-github"></i></a>
-      <!-- social link -->
-      <a href="#." target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="{{ twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
     </div>
     <!-- sidebar social end -->
   </div>

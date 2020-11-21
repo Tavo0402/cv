@@ -8,6 +8,10 @@ import { Path, PersonalInfo } from '../../config';
 })
 export class MyServicesComponent implements OnInit {
   services: any[] = PersonalInfo.services;
+  currentYear: number = new Date().getFullYear();
+  firstWorkYear: number = PersonalInfo.firstWorkYear;
+  completedProjects: number = PersonalInfo.completedProjects;
+  customers: number = PersonalInfo.customers;
   constructor() {}
 
   ngOnInit(): void {}
