@@ -144,11 +144,11 @@ export class AppComponent implements OnInit {
           height: '100%',
         },
         step: (state, bar) => {
-          bar.setText(Math.round(bar.value() * 100) + ' %');
+          //bar.setText(Math.round(bar.value() * 100) + ' %');
         },
       });
 
-      bar.animate(0.9);
+      bar.animate(0.75);
 
       var bar = new ProgressBar.Line('#lineprog2', {
         strokeWidth: 1.72,
@@ -161,11 +161,11 @@ export class AppComponent implements OnInit {
           height: '100%',
         },
         step: (state, bar) => {
-          bar.setText(Math.round(bar.value() * 100) + ' %');
+          //bar.setText(Math.round(bar.value() * 100) + ' %');
         },
       });
 
-      bar.animate(0.95);
+      bar.animate(0.75);
 
       var bar = new ProgressBar.Line('#lineprog3', {
         strokeWidth: 1.72,
@@ -178,11 +178,11 @@ export class AppComponent implements OnInit {
           height: '100%',
         },
         step: (state, bar) => {
-          bar.setText(Math.round(bar.value() * 100) + ' %');
+          //bar.setText(Math.round(bar.value() * 100) + ' %');
         },
       });
 
-      bar.animate(0.75);
+      bar.animate(0.8);
 
       var bar = new ProgressBar.Line('#lineprog4', {
         strokeWidth: 1.72,
@@ -195,7 +195,7 @@ export class AppComponent implements OnInit {
           height: '100%',
         },
         step: (state, bar) => {
-          bar.setText(Math.round(bar.value() * 100) + ' %');
+          //bar.setText(Math.round(bar.value() * 100) + ' %');
         },
       });
 
@@ -212,11 +212,11 @@ export class AppComponent implements OnInit {
           height: '100%',
         },
         step: (state, bar) => {
-          bar.setText(Math.round(bar.value() * 100) + ' %');
+          //bar.setText(Math.round(bar.value() * 100) + ' %');
         },
       });
 
-      bar.animate(0.85);
+      bar.animate(0.8);
 
       var bar = new ProgressBar.Line('#lineprog6', {
         strokeWidth: 1.72,
@@ -229,11 +229,11 @@ export class AppComponent implements OnInit {
           height: '100%',
         },
         step: (state, bar) => {
-          bar.setText(Math.round(bar.value() * 100) + ' %');
+          //bar.setText(Math.round(bar.value() * 100) + ' %');
         },
       });
 
-      bar.animate(0.85);
+      bar.animate(0.75);
 
       var bar = new ProgressBar.Line('#lineprog7', {
         strokeWidth: 1.72,
@@ -246,11 +246,11 @@ export class AppComponent implements OnInit {
           height: '100%',
         },
         step: (state, bar) => {
-          bar.setText(Math.round(bar.value() * 100) + ' %');
+          //bar.setText(Math.round(bar.value() * 100) + ' %');
         },
       });
 
-      bar.animate(0.85);
+      bar.animate(0.7);
 
       var bar = new ProgressBar.Line('#lineprog8', {
         strokeWidth: 1.72,
@@ -263,7 +263,7 @@ export class AppComponent implements OnInit {
           height: '100%',
         },
         step: (state, bar) => {
-          bar.setText(Math.round(bar.value() * 100) + ' %');
+          //bar.setText(Math.round(bar.value() * 100) + ' %');
         },
       });
 

@@ -5,15 +5,15 @@ export let Path = {
 export let PersonalInfo = {
   name: "Octavio Ponce",
   title: "Full Stack Developer",
-  country: "Mexico",
+  country: "México",
   state: "Chihuahua",
-  city: "Juarez",
+  city: "Juárez",
   year: "1991",
   linkedIn: "https://www.linkedin.com/in/octavio-ponce-980573165/",
   github: "https://github.com/Tavo0402",
   twitter: "https://twitter.com/OctavioPonce12",
   email: "oponce2014@hotmail.com",
-  phone: "+52656-3-07-11-82",
+  phone: "+52-656-3-07-11-82",
   firstWorkYear: "2015",
   completedProjects: "15",
   customers: "5",
@@ -21,22 +21,22 @@ export let PersonalInfo = {
     {
       id: "lineprog1",
       name: "HTML",
-      percentage: 90,
+      percentage: 80,
     },
     {
       id: "lineprog2",
       name: "CSS",
-      percentage: 90,
+      percentage: 75,
     },
     {
       id: "lineprog3",
       name: "JS",
-      percentage: 90,
+      percentage: 80,
     },
     {
       id: "lineprog4",
       name: "TS",
-      percentage: 90,
+      percentage: 70,
     },
     {
       id: "lineprog5",
@@ -46,12 +46,12 @@ export let PersonalInfo = {
     {
       id: "lineprog6",
       name: "VB",
-      percentage: 90,
+      percentage: 85,
     },
     {
       id: "lineprog7",
       name: "SQL",
-      percentage: 90,
+      percentage: 80,
     },
   ],
   others: [
@@ -65,24 +65,28 @@ export let PersonalInfo = {
     "Jenkins",
     "Docker",
     "GIT knowledge",
+    "Familiar with Agile and Scrum working methods",
   ],
   services: [
     {
       name: "Web Development",
-      description: "",
+      description:
+        "Software and web pages, using the most modern technologies on the market",
     },
     {
       name: "Mobile Development",
-      description: "",
+      description:
+        "Applications for tablets and smartphones using the best responsive frameworks",
     },
     {
       name: "Desktop Development",
-      description: "",
+      description:
+        "Desktop Software using the most effective development processes",
     },
   ],
   education: [
     {
-      title: "Instituto Tecnologico De Ciudad Juárez",
+      title: "Instituto Tecnológico De Ciudad Juárez",
       subtitle: "Computer Systems Enginner",
       description: "",
       dates: "2010-2016",
@@ -96,21 +100,35 @@ export let PersonalInfo = {
   ],
   work_history: [
     {
-      title: "GE HealthCare",
+      title: "GE HealthCare | Juárez, MX",
       subtitle: "Web Developer",
-      description: "",
+      description: [
+        "Designed web applications and maintained content for multiple .NET-based systems.",
+        "Coordinate the design and implementation of various applications, including collaboration with project managers, and client representative and development teams.",
+        "Database Desing, Maintenance, Jobs.",
+        "Collaborated well with other team members to determine the best design specifications and details",
+        "Wrote extensible and maintainable code as part of a team.",
+      ],
       dates: "2018-Current",
     },
     {
-      title: "HP / HPE / DXC ",
-      subtitle: "Service Information Developer",
-      description: "",
+      title: "HP / HPE / DXC | Juárez, MX",
+      subtitle: "SVC Developer",
+      description: [
+        "Modified existing software to detect and correct errors, improve performance, and upgrade interfaces.",
+        "Experimented with multiple iterations during design implementation.",
+        "Consulted with clients regularly regarding projects, proposals, and technical issues that arise during the development process.",
+      ],
       dates: "2016-2018",
     },
     {
-      title: "FLUTEC",
+      title: "FLUTEC | Juárez, MX",
       subtitle: "IT Technician ",
-      description: "",
+      description: [
+        "HelpDesk.",
+        "Computer Repair.",
+        "Desktop applications development.",
+      ],
       dates: "2013-2016",
     },
   ],

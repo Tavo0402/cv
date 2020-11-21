@@ -75,9 +75,9 @@
                 <span class="art-date">{{ wh.dates }}</span>
               </div>
             </div>
-            <p>
-              {{ wh.description }}
-            </p>
+            <div *ngFor="let desc of wh.description">
+              <p>- {{ desc }}</p>
+            </div>
           </div>
         </div>
       </div>
