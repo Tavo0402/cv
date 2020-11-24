@@ -1,5 +1,5 @@
 export let Path = {
-  url: "http://localhost:4200/assets/",
+  url: "https://tavo0402.github.io/cv/assets/",
 };
 
 export let PersonalInfo = {
